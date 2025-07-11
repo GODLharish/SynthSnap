@@ -1,0 +1,5 @@
+[PASS] DynamicVoltageScaling
+- Baseline power: 450mW
+- Throttled power: 340mW (24% reduction)
+- Quality maintained: 0.82 (on 1.0 scale)
+- Thermal status: Throttling engaged at 85°C
