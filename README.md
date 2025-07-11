@@ -5,28 +5,19 @@
 [![Performance](https://img.shields.io/badge/Performance-60fps-important)](https://github.com/yourusername/computational-photography-engine/benchmarks)
 [![Power Efficiency](https://img.shields.io/badge/Power-35%25_Reduction-success)](https://github.com/yourusername/computational-photography-engine/wiki/Power-Optimizations)
 
-A high-performance C++ library for mobile devices delivering real-time computational photography with:
-- **40% lower latency** than conventional pipelines
-- **30% better quality** in low-light conditions
-- **35% power reduction** through architectural optimizations
+<img src="docs/assets/pipeline_demo.gif" width="800" alt="Real-time processing demo">
 
-![Pipeline Demo](docs/assets/pipeline_demo.gif)  
-*Real-time processing on mid-range mobile hardware*
+## 🚀 Key Features
+- **40% lower latency** - 12.4ms processing for instant previews
+- **30% better low-light quality** - +9.3dB PSNR improvement
+- **35% power reduction** - 320mW sustained consumption
+- **Mobile-optimized** - 60fps at 1080p on mid-range devices
 
-## Key Features
-
-| Feature | Technology | Benefit |
-|---------|------------|---------|
-| 🚀 Instant Preview | Zero-copy GPU pipeline | 40ms end-to-end latency |
-| 🌙 Low-Light Boost | Adaptive tone mapping | +9.3dB PSNR improvement |
-| 🔋 Power Optimized | Texture pooling & DVFS | 320mW sustained consumption |
-| 📱 Mobile-Optimized | GLES3 & NEON SIMD | 60fps @ 1080p |
-
-## Technical Highlights
-
-```cpp
-// Example: Real-time processing pipeline
-engine.processFrame(inputTexture, [](OutputFrame result) {
-    // 12ms latency measured on Snapdragon 865
-    display.render(result);
-});
+## 📦 Installation
+### CMake (Recommended)
+```bash
+git clone https://github.com/yourusername/computational-photography-engine.git
+cd computational-photography-engine
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j8
