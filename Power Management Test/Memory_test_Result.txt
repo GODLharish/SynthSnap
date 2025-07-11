@@ -1,0 +1,5 @@
+[PASS] TexturePoolReuse
+- Initial memory: 152MB
+- Final memory: 152.3MB
+- Memory delta: 0.3MB (<1MB threshold)
+- Texture allocations: 2 (expected: 2)
