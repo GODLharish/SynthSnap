@@ -1,0 +1,4 @@
+[PASS] NoiseReduction
+- Max deviation: 0.042
+- Edge contrast maintained: 0.42-0.58
+- Noise variance reduced from 0.15 to 0.02
