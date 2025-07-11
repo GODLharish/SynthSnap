@@ -1,0 +1,5 @@
+[PASS] DynamicRangeExpansion
+- Input avg: 0.095 → Output avg: 0.285 (3.0x gain)
+- Shadow detail: 0.08 → 0.24 (3x enhancement)
+- No clipping detected
+- PSNR improvement: 12.8dB → 24.3dB
